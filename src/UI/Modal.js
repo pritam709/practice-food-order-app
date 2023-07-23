@@ -12,13 +12,13 @@ const Modal = (props) => {
   };
 
   const BackDrop = (props) => {
-    return <div className={classes.backdrop}></div>;
+    return <div className={classes.backdrop} onClick={props.onClick}></div>;
   };
 
   return (
     <>
       {" "}
-      {ReactDOM.createPortal(<BackDrop />, document.getElementById("modal"))}
+      {ReactDOM.createPortal(<BackDrop onClick={props.onClick} />, document.getElementById("modal"))}
       {ReactDOM.createPortal(
         <ModalOverlay>{props.children}</ModalOverlay>,
         document.getElementById("modal")
