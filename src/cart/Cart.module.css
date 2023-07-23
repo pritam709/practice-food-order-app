@@ -44,3 +44,56 @@
     background-color: #8a2b06;
     color: white;
   }
+
+  .list{
+    list-style:none;
+    margin:0;
+    padding:0;
+
+  }
+  .list-items{
+    border-bottom:2px solid #8a2b06;
+    padding:1rem;
+    display:flex;
+    justify-content:space-between;
+    font-weight:bold;
+    align-items:center;
+  }
+
+  .item p{
+    font-weight:bold;
+    margin:0.25rem;
+    font-size:1.2rem;
+  }
+  .price{
+    color: #8a2b06;
+    
+  }
+
+  .amount{
+    margin-left :1.5rem;
+    border:1px solid black;
+    color: black;
+    padding:0.2rem;
+    border-radius:7px;
+  }
+
+  .controls button {
+    font: inherit;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #8a2b06;
+    border: 1px solid #8a2b06;
+    width: 3rem;
+    text-align: center;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin: 0.25rem;
+  }
+  .controls button:hover,
+.controls button:active {
+  background-color: #8a2b06;
+  color: white;
+}
